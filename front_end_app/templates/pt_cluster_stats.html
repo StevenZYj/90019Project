@@ -1,0 +1,15 @@
+{% extends "header.html" %}
+{% block title %}
+Public Transportation Clustering Statistics
+{% endblock %}
+{% block head %}
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css' rel='stylesheet'>
+{% endblock %}
+{% block body %}
+  <div class="container">
+    <div id='pt-cluster-stats'> </div>
+  </div>
+
+  <script type="text/javascript" src="{{ url_for('static', filename='bundle.js', version=ver) }}"></script>
+{% endblock %}
